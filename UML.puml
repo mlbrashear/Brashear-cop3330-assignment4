@@ -1,0 +1,50 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+abstract class ToDoApplication
+abstract class ToDoController {
+AddButton
+RemoveButton
+SaveAllButton
+LoadButton
+AddToListButton
+RemoveFromListButton
+EditDescButton
+EditTitleButton
+EditDateButton
+SaveButton
+CompletedButton
+IncompletedButton
+}
+abstract class List {
+addItem
+removeItem
+editTitle
+editDesc
+editDate
+showComplete
+showIncomplete
+save
+}
+abstract class AddList {
+add
+}
+abstract class LoadList {
+load
+}
+abstract class SaveAllLists {
+saveAll
+}
+abstract class RemoveList {
+remove
+}
+
+ToDoApplication <|-- ToDoController
+ToDoController <|-- List
+
+AddButton <|-- AddList
+LoadButton <|--  LoadList
+SaveAllButton <|-- SaveAllLists
+RemoveButton <|-- RemoveList
+
+@enduml

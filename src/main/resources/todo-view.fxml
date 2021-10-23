@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="656.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.ToDoController">
+   <children>
+      <Label alignment="TOP_CENTER" prefHeight="28.0" prefWidth="948.0" text="To-Do List">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <ButtonBar layoutX="593.0" layoutY="625.0" prefHeight="25.0" prefWidth="353.0">
+        <buttons>
+          <Button mnemonicParsing="false" text="Add" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="177.0" text="Remove" />
+            <Button mnemonicParsing="false" text="Save All" />
+            <Button mnemonicParsing="false" text="Load" />
+        </buttons>
+      </ButtonBar>
+      <ScrollBar layoutX="927.0" layoutY="25.0" orientation="VERTICAL" prefHeight="593.0" prefWidth="14.0" />
+      <Accordion layoutY="31.0" prefHeight="593.0" prefWidth="930.0" />
+   </children>
+</AnchorPane>
